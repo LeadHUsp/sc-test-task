@@ -1,0 +1,31 @@
+@import 'reset.scss';
+@import 'mixin.scss';
+@import 'vars.scss';
+//blocks
+@import '../components/PrivewCard/PreviwCard.scss', '../components/Reviews/Reviews.scss',
+  '../components/Chat/Chat.scss';
+html,
+body {
+  font-family: 'KievitPro', Arial, sans-serif;
+  background-color: #f9f7f2;
+  color: #000;
+  font-weight: 400;
+}
+.container {
+  max-width: 910px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.page {
+  padding: 134px 0;
+}
+.block-title {
+  color: inherit;
+  font-weight: bold;
+  @include value('font-size', 20, 29);
+}
+._fw {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,59 @@
+.pcard {
+  background: #fff;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__title {
+    padding-bottom: 0.8em;
+  }
+  &__box {
+    padding: 0 15px;
+    width: 50%;
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 17px;
+    font-weight: 300;
+    height: 100%;
+    line-height: 123%;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__link {
+    position: relative;
+    margin: 7px 0 0;
+    font-weight: 400;
+    padding: 0 0 5px;
+    display: inline-block;
+    transition: color 0.4s ease;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background: $primary;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .pcard {
+    &__box {
+      width: 100%;
+    }
+    &__descr {
+      padding: 30px 15px;
+    }
+  }
+}

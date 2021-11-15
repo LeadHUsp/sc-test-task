@@ -1,0 +1,11 @@
+@function width($parent-width, $element-width) {
+  @return ($element-width / $parent-width) * 100%;
+}
+@mixin value($property, $min-value, $value) {
+  #{$property}: $value + px;
+  @media (max-width: 880px) {
+    #{$property}: calc(
+      #{$min-value + px} + #{($value - $min-value)} * ((100vw - 320px) / #{880 - 320})
+    );
+  }
+}
