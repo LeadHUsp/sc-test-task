@@ -15,6 +15,10 @@
   }
 }
 .wmessager {
+  &__track {
+    width: 3px;
+    background: #ff4641;
+  }
   &__title {
     padding-bottom: 25px;
   }
@@ -53,6 +57,29 @@
   &__rating {
     margin-left: auto;
   }
+
+  &__footer {
+    border-top: 1px solid #ececec;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+  &__input {
+    font-family: inherit;
+    min-width: 270px;
+    font-size: 15px;
+    padding: 14px 30px 14px 24px;
+    background: #ffffff;
+    border: 1px solid #ececec;
+  }
+  &__field {
+    padding-left: 20px;
+  }
+  &__send {
+    margin-left: 10px;
+    cursor: pointer;
+  }
 }
 .icon-list {
   display: flex;
@@ -62,6 +89,95 @@
     margin-right: 3px;
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+.message {
+  margin: 10px 0;
+  padding: 0 28px;
+  &__wrapper {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    background: #f9f7f2;
+    &._current {
+      padding-left: 26px;
+      padding-right: 26px;
+      background: #fff;
+    }
+  }
+  &__avatar {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  &__content {
+    font-size: 15px;
+    line-height: 160%;
+    margin-left: 20px;
+    overflow-wrap: break-word;
+  }
+  &__msg {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  &__note {
+    display: block;
+    font-size: 11px;
+    line-height: 25px;
+    color: #9d9d9d;
+  }
+}
+@media screen and (max-width: 960px) {
+  .chat {
+    &__wrapper {
+      margin: 0;
+    }
+    &__window {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      width: 100%;
+      border: none;
+    }
+  }
+  .wmessager {
+    &__field {
+      flex-grow: 1;
+    }
+    &__input {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .wmessager {
+    &__head {
+      padding: 26px 15px;
+    }
+    &__footer {
+      padding: 26px 15px;
+    }
+    &__avatar {
+      display: none;
+    }
+    &__input {
+      min-width: 180px;
+    }
+    &__track {
+      width: 1px;
+    }
+  }
+  .message {
+    padding: 0 8px;
+    &__wrapper {
+      &._current {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
   }
 }

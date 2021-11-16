@@ -57,7 +57,7 @@
   background: #f9f7f2;
   padding: 26px 23px 23px 20px;
   font-size: 15px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+
   &__head {
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@
       position: relative;
       padding-left: 5px;
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 50%;
@@ -162,5 +162,24 @@
     font-size: inherit;
     display: inline-block;
     padding-left: 4px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .reviews {
+    padding: 30px 15px;
+    &__footer {
+      flex-wrap: wrap;
+    }
+    &__box {
+      width: 100%;
+      &--dots {
+        padding-top: 10px;
+      }
+    }
+    &__btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

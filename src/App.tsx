@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 //components
-import { PreviewCard } from 'components/PrivewCard/PreviewCard';
-import { Reviews } from 'components/Reviews/Reviews';
-import { ChatList } from 'components/Chat/Chat';
+import { PreviewCard } from "components/PrivewCard/PreviewCard";
+import { Reviews } from "components/Reviews/Reviews";
+import { ChatList } from "components/Chat/Chat";
 
 function App() {
   return (

@@ -1,15 +1,16 @@
-@import 'reset.scss';
-@import 'mixin.scss';
-@import 'vars.scss';
+@import "reset.scss";
+@import "mixin.scss";
+@import "vars.scss";
 //blocks
-@import '../components/PrivewCard/PreviwCard.scss', '../components/Reviews/Reviews.scss',
-  '../components/Chat/Chat.scss';
+@import "../components/PrivewCard/PreviwCard.scss",
+  "../components/Reviews/Reviews.scss", "../components/Chat/Chat.scss";
 html,
 body {
-  font-family: 'KievitPro', Arial, sans-serif;
+  font-family: "KievitPro", Arial, sans-serif;
   background-color: #f9f7f2;
   color: #000;
   font-weight: 400;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .container {
   max-width: 910px;
@@ -23,7 +24,7 @@ body {
 .block-title {
   color: inherit;
   font-weight: bold;
-  @include value('font-size', 20, 29);
+  @include value("font-size", 20, 29);
 }
 ._fw {
   width: 100%;
