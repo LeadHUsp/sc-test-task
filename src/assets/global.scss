@@ -1,9 +1,9 @@
-@import "reset.scss";
-@import "mixin.scss";
-@import "vars.scss";
+@import "reset";
+@import "mixin";
+@import "vars";
 //blocks
-@import "../components/PrivewCard/PreviwCard.scss",
-  "../components/Reviews/Reviews.scss", "../components/Chat/Chat.scss";
+@import "../components/PrivewCard/PreviwCard", "../components/Reviews/Reviews",
+  "../components/Chat/Chat";
 html,
 body {
   font-family: "KievitPro", Arial, sans-serif;

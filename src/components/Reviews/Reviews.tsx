@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
-import 'react-image-lightbox/style.css';
-import FsLightbox from 'fslightbox-react';
+import React, { useState } from "react";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import "react-image-lightbox/style.css";
+import FsLightbox from "fslightbox-react";
 //assets
-import avatar from 'assets/avatar.png';
-import slide1 from 'assets/slide-1.jpg';
-import slide2 from 'assets/slide-2.jpg';
-import slide3 from 'assets/slide-3.jpg';
-import { ReactComponent as Like } from 'assets/like.svg';
-import 'swiper/swiper.scss';
+import avatar from "assets/avatar.png";
+import slide1 from "assets/slide-1.jpg";
+import slide2 from "assets/slide-2.jpg";
+import slide3 from "assets/slide-3.jpg";
+import { ReactComponent as Like } from "assets/like.svg";
+import "~swiper/swiper.scss";
 
 const ReviewsCard: React.FC<{
   openGallery: (number: number, sources: string[]) => void;
@@ -27,9 +27,9 @@ const ReviewsCard: React.FC<{
         <span className='rcard__title--marked'>БАРСЕЛОНА</span> — О городе:
       </div>
       <div className='rcard__body'>
-        Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я
-        каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там
-        побывать и осмотреть ...
+        Барселона – моя третья большая любовь, после Вены и Крита. Это город, в
+        который я каждый раз возвращаюсь с огромным удовольствием, всем
+        рекомендую хоть раз там побывать и осмотреть ...
       </div>
       <div className='rcard__gallery'>
         <div
@@ -62,7 +62,9 @@ const ReviewsCard: React.FC<{
       <div className='rcard__footer'>
         <div className='rcard__list'>
           <div className='rcard__item'>около 1 года назад</div>
-          <div className='rcard__item rcard__item--separator'>9 комментариев</div>
+          <div className='rcard__item rcard__item--separator'>
+            9 комментариев
+          </div>
           <div className='rcard__item rcard__item--align_end'>
             <button className='icon-btn'>
               <Like className='icon-btn__icon' />
@@ -105,10 +107,10 @@ export const Reviews: React.FC = () => {
       <Swiper
         modules={[Pagination]}
         pagination={{
-          el: '.reviews__box--dots',
-          type: 'bullets',
-          bulletClass: 'reviews__dot',
-          bulletActiveClass: '_active',
+          el: ".reviews__box--dots",
+          type: "bullets",
+          bulletClass: "reviews__dot",
+          bulletActiveClass: "_active",
         }}
         spaceBetween={20}
         slidesPerView='auto'>
