@@ -91,14 +91,14 @@ const ChatBox: React.FC<{
             autoHeight
             autoHeightMin={100}
             autoHeightMax={495}
-            onUpdate={(value) => {
+            onUpdate={(value: any) => {
               if (value.scrollHeight !== scrollHeight) {
                 setScrollHeight(value.scrollHeight);
                 scroolbar.current?.scrollToBottom();
               }
             }}
             style={{ height: "495px" }}
-            renderThumbVertical={(props) => (
+            renderThumbVertical={(props: any) => (
               <div {...props} className='wmessager__track' />
             )}>
             {messages.map((item) => (
